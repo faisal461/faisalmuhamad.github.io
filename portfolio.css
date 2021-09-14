@@ -1,0 +1,750 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;            
+    }
+    a{
+    text-decoration: none;
+    }
+    /* judul-konten */
+    .hr{
+    display: block;
+    width: 100px;
+    border-radius: 3px;
+    height: 5px;
+    margin: 26px 0 35px;
+    margin-top: 10px;
+    background-color: rgb(9, 48, 107);
+    }
+    
+    .about span.hr-about{
+    height: 3px;
+    }
+    
+    body{
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #333;
+    }
+    .tengah{
+    text-align: center;
+    text-transform: capitalize;
+    }
+    .container{
+    display: flex;
+    }
+    .auto-tengah{
+    margin:0 auto;
+    }
+    
+    svg{
+    position: relative;
+    z-index: 0;
+    margin-bottom: -6px;
+    /* box-shadow:0 0 4px 4px rgba(250, 128, 114, 0.323); */
+    }
+    
+    .indent{
+    text-indent: 35px;
+    }
+    
+    .wadah{
+        width: 1100px;
+        /* background-color: #9b36b7; */
+    }
+    
+    .katingal{
+        padding-top: 80px;
+        /* margin-top: -80px; */
+    }
+    .judul-konten{
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* bagian nav-bar & header */
+    header{
+    box-shadow: 0 1px 8px 2px rgba(46, 43, 43, 0.507);
+    width: 100%;
+    /* height: 70px; */
+    position: fixed;
+    z-index: 88;
+    background-color: rgb(59, 148, 237);
+    }
+    
+    .header{
+        align-items: center;
+    }
+    
+    .padding-wadah .logo{
+        /* background-color: #cf7f51; */
+    }
+
+    .logo img{
+        filter:drop-shadow(3px 4px 5px) ;
+        height: 50px;
+        width: 70px;
+    }
+    
+    /* .logo h2{
+        color: white;
+         /* background-color: #333;  */
+        /* font-style: oblique; */
+        /* width: auto; */
+        /* padding: 7px 13px; */
+        /* border-radius:47% 0 47% 37%; */
+        /* font-size: 35px; */
+        /* font-family: lucida; */
+        /* font-family: cursive; */
+        /* position: relative; */
+        /* background-color: purple; */
+    /* } */ */
+    .logo h2::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height:15px;
+        bottom: -10px;
+        z-index: 40;
+        left: -13px;
+        border-radius: 50%;
+        background-color: inherit;
+    }
+    .i-logo::before{
+        background: url(img/icon/i-logo1.png);
+    }
+
+    header .layar .kojin{
+        display: none;
+    }
+  
+    
+    .wadah .navbar{
+        display: block;
+        height: 30px;
+        /* background-color: rgba(222, 184, 135, 0.747); */
+        /* box-shadow:0 2px 6px 2px rgba(0,0,0,.5); */
+        align-items: center;
+        /* background-color: red; */
+        /* margin-left: 8px; */
+    }
+    .padding-wadah{
+        padding: 7px 0;  
+        justify-content: space-between;
+    }
+    
+    
+    .wadah .inline{
+        /* color: whitesmoke; */
+    }
+    
+    .wadah .navbar a{
+        font-size: 20px;
+        color: rgb(215, 221, 245);
+        text-transform: capitalize;
+        margin-left: 22px;
+        transition: color .4s;
+    }
+    .wadah .navbar a:hover{
+        color: #fff;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #fff;
+        /* transition: border 1s; */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*bagian home*/
+    .hohome{
+        padding: 83px 0 0px;
+        background-color: #a2edff;
+    }
+    
+    div.hohome div.home{
+        z-index:0;
+        position: relative;
+        padding: 45px 0 0;
+        /* background-color: rgba(255, 99, 71, 0.432); */
+    }
+    .kojin{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        /* background-color: violet; */
+        /* width: 300px; */
+    }
+    
+    .kontak-home,
+    .join{
+        margin-left: 10px;
+        text-transform: capitalize;
+        /* position: absolute; */
+        display: block;
+        border: 2px solid rgb(37, 132, 226);
+        /* right: 0;
+        top: 0; */
+        color: dodgerblue;
+        cursor: pointer;
+        padding: 5px 12px;
+        border-radius: 11px;
+        /* box-shadow: 0 0 6px rgba(0,0,0,.2); */
+        /* text-shadow: 0 0 6px rgba(0,0,0,.2); */
+    }
+    .hohome a.kontak-home{
+        color: dodgerblue;
+        background-color: transparent;
+        /* right: 150px; */
+        display: block;
+    }
+    .hohome .join:hover{
+        color: white;
+        border:2px solid rgb(0, 174, 255);
+        background-color:rgb(0, 174, 255);
+    }
+    .hohome .kontak-home:hover{
+        color: white;
+        border:2px solid rgb(0, 174, 255);
+        background-color:rgb(0, 174, 255);
+    }
+    
+    
+    .home .profil{
+    /* background-color:  rgba(235, 235, 235, 0.33); */
+        /* background-color: coral; */
+        margin: 0 auto;
+        width: 400px;
+        box-sizing: border-box;
+        padding: 10px;
+        /* background-color: #ddd;*/
+    }
+    
+    
+    .profil h1{
+        margin: 14px 0 4px;
+        font-size: 37px;
+    }
+    
+    .profil .img{
+        width:50%;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: rgb(252, 251, 251);
+        border: 7px solid dimgray;
+        box-shadow: 0 0 0 3.5px white;
+    }
+    
+    .profil img{
+        width: 100%;
+    }
+    .profil span{
+        /* font-size: 20px; */
+    }
+    
+    .sosmed{
+        width:266px;
+        /* border: 1px solid black; */
+        padding: 9px;
+        border-radius: 7px;
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0),rgba(109, 109, 93, 0.371));
+        /* background-color: rgba(109, 109, 93, 0.645); */
+    }
+    
+    
+    
+    .sosmed a{
+        margin-right: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: rgba(143, 255, 30, 0.371); */
+        justify-content: center;
+    }
+    
+    .sosmed span{
+        position: relative;
+        font-size: 16px;
+        margin-top: 10px;
+        color: rgb(235, 230, 230);
+        font-weight: bold;
+        text-shadow: 0 0 1px rgb(22, 21, 21);
+    }
+    
+    .sosmed .facebook span,
+    .sosmed .twiter span{
+        text-transform: capitalize;
+    }
+    
+    .sosmed div.facebook{
+        margin-right: 0;
+    }
+    
+    .sosmed .icon::before{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        /* background-color: gold; */
+        background-size: cover;
+    }
+    
+    .sosmed .i-wa::before{
+        background-image: url(img/icon/wa.png);
+    }
+    .sosmed .i-twt::before{
+        background-size: 98px;
+        background-position: center;
+        background-image: url(img/icon/twtr.png);
+    }
+    .sosmed .i-fb::before{
+        background-image: url(img/icon/fb.png);
+    }
+    
+    .svg-home{
+        margin-top: -50px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* bagian about */ 
+    .sec-about{
+        margin-top: -100px;
+    }
+
+    .aabout h2{
+    padding-bottom: 20px;
+    }
+    
+    .aabout span,
+    .aabout h2{
+        /* position: relative; */
+        z-index: 19;
+    }
+    .aabout{
+        background-color: #fff;
+    }
+
+    section .about{
+    margin:0;
+    }
+    
+    .wadah .paragraf{
+        position: relative;
+        z-index:5;
+        padding: 10px 0 24px;
+        /* background-color: teal; */
+        width:700px;
+        margin-top: 35px;
+        justify-content: space-between;
+    }
+    
+    .paragraf p{
+        font-style: oblique;
+        width: 360px;
+        backkground-color:rgba(233,0,0,.1);
+        text-align: center;
+    }
+    .svg-about{
+        margin-top: -155px;
+    }
+    #about{
+        margin-top: 100px;
+        /* background-color: rgba(255, 0, 0, 0.823); */
+        z-index: 9;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*bagian youtube & instagram */
+    section .display{
+        /* padding-top: 40px; */
+    }
+    
+    .youtube{
+        background-color: #a2edff;
+    }
+    .instagram{
+        /* background-color: #ddd; */
+    }
+    
+    .ytb-section img{
+        width: 100%;
+    }
+    
+    .youtube,
+    .instagram{
+        /* padding: 20px 0 8px; */
+    }
+    
+    .youtube .ytb-section,
+    .instagram .ytb-section{                
+        /* background-color: pink; */
+        width: 46%;
+        padding-top: 40px;
+    }
+    .ytb-section img{
+        height: 100%;
+    }
+    .instagram .container{
+        flex-direction: row-reverse;
+    }
+    
+    .ytb-section p{
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 26px;
+    }
+    
+    .youtube .container,
+    .instagram .container
+    .fofoter .container{
+        justify-content: space-between;
+    }
+    
+    
+    .section-chanel div.profil-akun{
+        width: 30%;
+        height: 100%;
+        /* padding: 5px; */
+        box-sizing: border-box;
+    }
+    
+    .chanel .section-chanel{
+        justify-content: flex-start;
+        height: 110px;
+        box-sizing: border-box;
+        padding-bottom:17px;
+        margin-left: 20px;
+        /* background-color: lavender; */
+    }
+    .instagram .chanel .section-chanel{
+        margin: 0 20px 0 0;
+    }
+    
+    .ytb-section section .profil-akun{
+        /* background:#999;  */
+        width: 90px;
+    }
+    
+    .profil-akun div{
+        box-sizing: border-box;
+        /* border:3px solid gray; */
+        width: 100%;
+        box-shadow: 0 0 0 3px white;
+        height: 100%;
+        /* background-color: #333; */
+        border-radius: 50%; 
+        overflow: hidden;
+        border: 5px solid;
+    }
+    
+    .profil-akun div img{
+        width: inherit;
+        height:inherit;
+    }
+    
+    .judul-chanel{
+        /* background-color: violet; */
+        padding-left: 15px;
+    }
+    .instagram .judul-chanel{
+        padding: 0 15px 0 0;
+    }
+    
+    .judul-chanel h3{
+        text-transform: capitalize;
+        color: rgb(15, 102, 102);
+    }
+    
+    .judul-chanel .container{
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        /* background-color: rgba(255, 132, 0, 0.974); */
+    }
+    
+    .judul-chanel .container *{
+        margin:0 0 6px;
+    }
+    .instagram .judul-chanel .container{
+        align-items: flex-end;
+    }
+    
+    .judul-chanel p{
+        /* background-color: turquoise; */
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .judul-chanel a{
+        display: inline-block;
+        background-color: red;
+        color: white;
+        padding:5px 13px;
+        text-align: center;
+        width: 90px;
+        border-radius: 8px;
+        text-transform: capitalize;
+        font-size: 19px;
+    }
+    .instagram .judul-chanel a{
+            background-image: radial-gradient(
+                circle at 33%100%,
+                #fed373 4%,
+                #f15245 30%,
+                #d92e7f 62%,
+                #9b36b7 85%,
+                #515ecf);
+    }
+    .judul-chanel a:hover{
+        background-color: white;
+        color: red;
+        font-weight: bold;
+    }
+    .instagram .judul-chanel a:hover{
+        /* background-color: #a2edff; */
+        background-image: radial-gradient(
+            circle at 30%100%,
+            #fff,
+            #a2edff);
+    }
+    .judul-chanel a:active{
+        box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.823);
+    }
+    .youtube svg{
+        /* margin-top: -40px; */
+    }
+    /*
+    .logo-ig{
+        width: 8rem;
+        height: 8rem;
+        background-image: radial-gradient(
+            circle at 33%100%,
+                #fed373 4%,
+                #f15245 30%,
+                #d92e7f 62%,
+                #9b36b7 85%,
+                #515ecf);
+        border-radius: 30%;
+        position:relative;
+        }
+    
+        .logo-ig::before{
+        content: '';
+        border: .3rem solid #fff;
+        border-radius: 30%;
+        width: 5rem;
+        height: 5rem;
+        top: 13%;
+        left: 13.3%;
+        position: absolute;
+        }
+        .logo-ig::after{
+        content: '';
+        border: .3rem solid #fff;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        top: 27%;
+        left: 29%;
+        position: absolute;
+        }
+        .logo-ig span{
+        border: .3rem solid #fff;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        top: 25%;
+        right: 25%;
+        position: absolute;
+        }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*bagian instagram*/
+    
+    .instagram svg{
+        margin-top: -160px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* bagian kontak */
+    .kokontak{
+        background-color: #a2edff;
+        padding-bottom: 90px;
+    }
+    
+    .kokontak .kontak{
+        width: 500px;
+        font-size: 20px;
+        /* border-radius: 9px; */
+        /* background-color: khaki; */
+    }
+    
+    .kontak .inputan{
+        margin-top:56px;
+        padding:19px 26px 30px;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow:inset 0 0 5px -2px ;
+    }
+    
+    .kontak .inputan div{
+        width: 100%;
+        background-color: #fff;
+        border-bottom:3px solid brown;
+    }
+    .kontak input{
+        height: 55px;
+        box-sizing: border-box;
+    }
+    
+    .inputan label{
+        /* position: relative; */
+        margin-top: -10px;
+        text-transform: capitalize;
+        color:rgba(74, 75, 75, 0.486);
+    }
+    
+    .kontak .inputan *{
+        border: none;
+        outline: none;
+        
+    }
+    .kontak input,
+    .kontak textarea{
+        margin-top: 9px;
+    /*     background-color: pink; */
+        font-size: inherit;
+        /* border: 4px solid rgba(128, 128, 128, 0.781); */
+        width: inherit;
+    /*     padding-left:15px; */
+        text-transform: capitalize;
+        margin-bottom: 0px;
+        padding-top: 7px;
+    }
+    
+    .kontak textarea{
+        min-height: 150px;
+        max-height: 110px;
+        max-width:100%;
+        font-weight: normal;
+        font-family: arial;
+        
+        min-height: 100%;
+/*      background: #bc55; */
+    }
+    
+    
+    .kontak button{
+        width: 120px;
+        height: 40px;
+        color: white;
+        cursor: pointer;
+        margin-top: 17px;
+        font-size: inherit;
+        border-radius: 7px;
+        background-color: rgb(9, 90, 156);
+        box-shadow: 3px 2px 7px -2px black;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/* bagain footer */
+    .fofoter{
+        background-color: #515ecf;
+    }
+
+    .footer{
+        padding:15px 0;
+    }
+
+    .footer p{
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+/*     
+    svg{
+        display: none;
+        width: 0;
+        
+    } */
+
+
+
+

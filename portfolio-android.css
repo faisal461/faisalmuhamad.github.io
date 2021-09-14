@@ -1,0 +1,285 @@
+@media(max-width:575px){
+
+  body{
+    /* overflow-x: hidden; */
+  }
+    header,section,.wadah,.hohome,.paragraf,.home,.kokontak,.kontak{
+      width: 100%;
+    }
+
+
+    section .column{
+      flex-direction: column;
+      /* background-color: cornflowerblue; */
+    }
+
+  .katingal{
+      /* background-color: chartreuse; */
+      padding-top: 100px;
+    }
+
+    .judul-konten{
+      font-size: 30px;
+    }
+
+    .hr{
+      width: 70px;
+      margin-top: -7px;
+      margin-bottom: 10px;
+    }
+
+    .wadah{
+      margin:0 1px;
+      padding: 0;
+      /* width: 575px; */
+    }
+
+
+    header{
+      height: 90px;
+    }
+
+    header .container .logo{
+      /* padding-left: 18px; */
+    }
+
+    header .layar .header{
+      display: block;
+      /* width: 575px; */
+    }
+
+    header .layar .kojin{
+      display: flex;
+      top: 8px;
+      transform: scale(0.8);
+      /* background-color: blueviolet; */
+      width:220px;
+      justify-content: space-between;
+      /* position: static; */
+    }
+    .kojin .join,.kontak-home{
+      color: rgb(207, 226, 246);
+      display: block;
+      margin: 5px 5px 0 0;
+      border: 2px solid rgb(207, 226, 246);
+    }
+    .kojin .join:hover{
+      color: dodgerblue;
+      background-color: white;
+      /* font-weight: bold; */
+    }
+    .kojin .kontak-home:hover{
+        color: dodgerblue;
+        background-color: #fff;
+        /* font-weight: bold; */
+    }
+
+    header .layar nav.navbar{
+      justify-content: flex-start;
+      /* padding-bottom: 8px; */
+      /* background-color: pink; */
+      /* padding-left: 0; */
+    }
+
+    header .layar .navbar a{
+      margin-left: 14px;
+    }
+
+    #youtube svg{
+      margin-top: 74px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* bagian home */
+    .hohome{
+      /* padding-bottom: 500px; */
+    }
+    div.hohome .home{
+      display: flex;
+      justify-content: center;
+      /* position: static; */
+      flex-direction: column;
+    }
+  .home .kojin{
+    display: none;
+  }
+
+  .hohome svg{
+    margin-top: 40px;
+  }
+
+
+
+
+
+
+
+
+
+  /* bagian about */
+  .wadah-paragraf .paragraf{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    /* background-color: dodgerblue; */
+  }
+  .paragraf p{
+    /* background-colo: firebrick; */
+    font-size: 19px;
+    margin-top: 9px;
+  }
+  section.sec-about svg{
+    margin-top: -20px;
+  }
+  .aabout .column{
+    background-color: white;
+  }
+
+
+
+
+
+
+
+
+/* bagain youtube */
+.ytb-bg{
+  background-image: url(img/youtube.png);
+  background-size: cover;
+  background-position: -55px -10px;
+}
+.column{
+  background-color: #a2ecffa6;
+  padding: 0 15px;
+}
+
+.column .ytb-section{
+  /* background-color: darkkhaki; */
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  /* text-indent: 30px; */
+  padding: 0;
+  color: #555;
+  text-shadow: 0 0 5px #fff;
+}
+.ytb-section img{
+  display: none;
+}
+
+.column div .section-chanel{
+  /* background-color: darkturquoise; */
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2px;
+  /* align-items: center; */
+  padding-left: 15px;
+  /* justify-content: flex-start; */
+}
+/* .section-chanel .profil-akun{
+  background-color: fuchsia;
+} */
+.ytb-section{
+  padding: 0 19px;
+  box-sizing: border-box;
+  /* background-color: rgba(203, 206, 203, 0.561); */
+}
+
+
+.column div .section-chanel .judul-chanel{
+  /* background-color: blanchedalmond; */
+}
+
+
+.ytb-section .section-chanel .profil-akun{
+  width: 90px;
+  /* background-color: rgb(95, 146, 112); */
+}
+.section-chanel div .gambar{
+  background-color: blueviolet;
+  background-image: url(img/benget.jpg);
+  background-size: cover;
+}
+.section-chanel div div img{
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* bagian instagram */
+.ig-bg{
+  background-image: url(img/instagram2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -55px 49px;
+  background-origin: padding-box;
+}
+
+.instagram .column{
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+div.instagram .section-chanel{
+  /* background-color: tomato; */
+  padding-right: 15px;
+}
+
+
+.instagram svg{
+  margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+/* bagian kontak */
+
+.kokontak .kontak{
+  /* background-color: tomato; */
+  width: 300px;
+  
+}
+
+.inputan{
+  /* margin:0 auto ; */
+  /* width: inherit; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
