@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>My portfolio</title>
+      <style>
+       
+       *{
+    margin: 0;
+    padding: 0;            
+    }
+    a{
+    text-decoration: none;
+    }
+    /* judul-konten */
+    .hr{
+    display: block;
+    width: 100px;
+    border-radius: 3px;
+    height: 5px;
+    margin: 26px 0 35px;
+    margin-top: 10px;
+    background-color: rgb(9, 48, 107);
+    }
+    
+    .about span.hr-about{
+    height: 3px;
+    }
+    
+    body{
+    font-size: 23px;
+    font-family: sans-serif;
+    color: #333;
+    }
+    .tengah{
+    text-align: center;
+    text-transform: capitalize;
+    }
+    .container{
+    display: flex;
+    }
+    .auto-tengah{
+    margin:0 auto;
+    }
+    
+    svg{
+    position: relative;
+    z-index: 0;
+    margin-bottom: -6px;
+    /* box-shadow:0 0 4px 4px rgba(250, 128, 114, 0.323); */
+    }
+    
+    .indent{
+    text-indent: 35px;
+    }
+    
+    .wadah{
+        width: 1100px;
+        /* background-color: #9b36b7; */
+    }
+    
+    .katingal{
+        padding-top: 80px;
+        /* margin-top: -80px; */
+    }
+    .judul-konten{
+        margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* bagian nav-bar & header */
+    header{
+    box-shadow: 0 1px 8px 2px rgba(46, 43, 43, 0.507);
+    width: 100%;
+    /* height: 70px; */
+    position: fixed;
+    z-index: 88;
+    background-color: rgb(59, 148, 237);
+    }
+    
+    .header{
+        align-items: center;
+    }
+    
+    .padding-wadah .logo{
+        /* background-color: #cf7f51; */
+    }
+
+    .logo img{
+        filter:drop-shadow(3px 4px 5px) ;
+        height: 50px;
+        width: 70px;
+    }
+    
+    /* .logo h2{
+        color: white;
+         /* background-color: #333;  */
+        /* font-style: oblique; */
+        /* width: auto; */
+        /* padding: 7px 13px; */
+        /* border-radius:47% 0 47% 37%; */
+        /* font-size: 35px; */
+        /* font-family: lucida; */
+        /* font-family: cursive; */
+        /* position: relative; */
+        /* background-color: purple; */
+    /* } */ */
+    .logo h2::before{
+        content: '';
+        position: absolute;
+        width: 15px;
+        height:15px;
+        bottom: -10px;
+        z-index: 40;
+        left: -13px;
+        border-radius: 50%;
+        background-color: inherit;
+    }
+    .i-logo::before{
+        background: url(img/icon/i-logo1.png);
+    }
+
+    header .layar .kojin{
+        display: none;
+    }
+  
+    
+    .wadah .navbar{
+        display: block;
+        height: 30px;
+        /* background-color: rgba(222, 184, 135, 0.747); */
+        /* box-shadow:0 2px 6px 2px rgba(0,0,0,.5); */
+        align-items: center;
+        /* background-color: red; */
+        /* margin-left: 8px; */
+    }
+    .padding-wadah{
+        padding: 7px 0;  
+        justify-content: space-between;
+    }
+    
+    
+    .wadah .inline{
+        /* color: whitesmoke; */
+    }
+    
+    .wadah .navbar a{
+        font-size: 20px;
+        color: rgb(215, 221, 245);
+        text-transform: capitalize;
+        margin-left: 22px;
+        transition: color .4s;
+    }
+    .wadah .navbar a:hover{
+        color: #fff;
+        padding-bottom: 4px;
+        border-bottom: 2px solid #fff;
+        /* transition: border 1s; */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*bagian home*/
+    .hohome{
+        padding: 83px 0 0px;
+        background-color: #a2edff;
+    }
+    
+    div.hohome div.home{
+        z-index:0;
+        position: relative;
+        padding: 45px 0 0;
+        /* background-color: rgba(255, 99, 71, 0.432); */
+    }
+    .kojin{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        /* background-color: violet; */
+        /* width: 300px; */
+    }
+    
+    .kontak-home,
+    .join{
+        margin-left: 10px;
+        text-transform: capitalize;
+        /* position: absolute; */
+        display: block;
+        border: 2px solid rgb(37, 132, 226);
+        /* right: 0;
+        top: 0; */
+        color: dodgerblue;
+        cursor: pointer;
+        padding: 5px 12px;
+        border-radius: 11px;
+        /* box-shadow: 0 0 6px rgba(0,0,0,.2); */
+        /* text-shadow: 0 0 6px rgba(0,0,0,.2); */
+    }
+    .hohome a.kontak-home{
+        color: dodgerblue;
+        background-color: transparent;
+        /* right: 150px; */
+        display: block;
+    }
+    .hohome .join:hover{
+        color: white;
+        border:2px solid rgb(0, 174, 255);
+        background-color:rgb(0, 174, 255);
+    }
+    .hohome .kontak-home:hover{
+        color: white;
+        border:2px solid rgb(0, 174, 255);
+        background-color:rgb(0, 174, 255);
+    }
+    
+    
+    .home .profil{
+    /* background-color:  rgba(235, 235, 235, 0.33); */
+        /* background-color: coral; */
+        margin: 0 auto;
+        width: 400px;
+        box-sizing: border-box;
+        padding: 10px;
+        /* background-color: #ddd;*/
+    }
+    
+    
+    .profil h1{
+        margin: 14px 0 4px;
+        font-size: 37px;
+    }
+    
+    .profil .img{
+        width:50%;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: rgb(252, 251, 251);
+        border: 7px solid dimgray;
+        box-shadow: 0 0 0 3.5px white;
+    }
+    
+    .profil img{
+        width: 100%;
+    }
+    .profil span{
+        /* font-size: 20px; */
+    }
+    
+    .sosmed{
+        width:266px;
+        /* border: 1px solid black; */
+        padding: 9px;
+        border-radius: 7px;
+        position: relative;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0),rgba(109, 109, 93, 0.371));
+        /* background-color: rgba(109, 109, 93, 0.645); */
+    }
+    
+    
+    
+    .sosmed a{
+        margin-right: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: rgba(143, 255, 30, 0.371); */
+        justify-content: center;
+    }
+    
+    .sosmed span{
+        position: relative;
+        font-size: 16px;
+        margin-top: 10px;
+        color: rgb(235, 230, 230);
+        font-weight: bold;
+        text-shadow: 0 0 1px rgb(22, 21, 21);
+    }
+    
+    .sosmed .facebook span,
+    .sosmed .twiter span{
+        text-transform: capitalize;
+    }
+    
+    .sosmed div.facebook{
+        margin-right: 0;
+    }
+    
+    .sosmed .icon::before{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        /* background-color: gold; */
+        background-size: cover;
+    }
+    
+    .sosmed .i-wa::before{
+        background-image: url(img/icon/wa.png);
+    }
+    .sosmed .i-twt::before{
+        background-size: 98px;
+        background-position: center;
+        background-image: url(img/icon/twtr.png);
+    }
+    .sosmed .i-fb::before{
+        background-image: url(img/icon/fb.png);
+    }
+    
+    .svg-home{
+        margin-top: -50px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* bagian about */ 
+    .sec-about{
+        margin-top: -100px;
+    }
+
+    .aabout h2{
+    padding-bottom: 20px;
+    }
+    
+    .aabout span,
+    .aabout h2{
+        /* position: relative; */
+        z-index: 19;
+    }
+    .aabout{
+        background-color: #fff;
+    }
+
+    section .about{
+    margin:0;
+    }
+    
+    .wadah .paragraf{
+        position: relative;
+        z-index:5;
+        padding: 10px 0 24px;
+        /* background-color: teal; */
+        width:700px;
+        margin-top: 35px;
+        justify-content: space-between;
+    }
+    
+    .paragraf p{
+        font-style: oblique;
+        width: 360px;
+        backkground-color:rgba(233,0,0,.1);
+        text-align: center;
+    }
+    .svg-about{
+        margin-top: -155px;
+    }
+    #about{
+        margin-top: 100px;
+        /* background-color: rgba(255, 0, 0, 0.823); */
+        z-index: 9;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*bagian youtube & instagram */
+    section .display{
+        /* padding-top: 40px; */
+    }
+    
+    .youtube{
+        background-color: #a2edff;
+    }
+    .instagram{
+        /* background-color: #ddd; */
+    }
+    
+    .ytb-section img{
+        width: 100%;
+    }
+    
+    .youtube,
+    .instagram{
+        /* padding: 20px 0 8px; */
+    }
+    
+    .youtube .ytb-section,
+    .instagram .ytb-section{                
+        /* background-color: pink; */
+        width: 46%;
+        padding-top: 40px;
+    }
+    .ytb-section img{
+        height: 100%;
+    }
+    .instagram .container{
+        flex-direction: row-reverse;
+    }
+    
+    .ytb-section p{
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 26px;
+    }
+    
+    .youtube .container,
+    .instagram .container
+    .fofoter .container{
+        justify-content: space-between;
+    }
+    
+    
+    .section-chanel div.profil-akun{
+        width: 30%;
+        height: 100%;
+        /* padding: 5px; */
+        box-sizing: border-box;
+    }
+    
+    .chanel .section-chanel{
+        justify-content: flex-start;
+        height: 110px;
+        box-sizing: border-box;
+        padding-bottom:17px;
+        margin-left: 20px;
+        /* background-color: lavender; */
+    }
+    .instagram .chanel .section-chanel{
+        margin: 0 20px 0 0;
+    }
+    
+    .ytb-section section .profil-akun{
+        /* background:#999;  */
+        width: 90px;
+    }
+    
+    .profil-akun div{
+        box-sizing: border-box;
+        /* border:3px solid gray; */
+        width: 100%;
+        box-shadow: 0 0 0 3px white;
+        height: 100%;
+        /* background-color: #333; */
+        border-radius: 50%; 
+        overflow: hidden;
+        border: 5px solid;
+    }
+    
+    .profil-akun div img{
+        width: inherit;
+        height:inherit;
+    }
+    
+    .judul-chanel{
+        /* background-color: violet; */
+        padding-left: 15px;
+    }
+    .instagram .judul-chanel{
+        padding: 0 15px 0 0;
+    }
+    
+    .judul-chanel h3{
+        text-transform: capitalize;
+        color: rgb(15, 102, 102);
+    }
+    
+    .judul-chanel .container{
+        flex-direction: column;
+        /* justify-content: flex-start; */
+        /* background-color: rgba(255, 132, 0, 0.974); */
+    }
+    
+    .judul-chanel .container *{
+        margin:0 0 6px;
+    }
+    .instagram .judul-chanel .container{
+        align-items: flex-end;
+    }
+    
+    .judul-chanel p{
+        /* background-color: turquoise; */
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .judul-chanel a{
+        display: inline-block;
+        background-color: red;
+        color: white;
+        padding:5px 13px;
+        text-align: center;
+        width: 90px;
+        border-radius: 8px;
+        text-transform: capitalize;
+        font-size: 19px;
+    }
+    .instagram .judul-chanel a{
+            background-image: radial-gradient(
+                circle at 33%100%,
+                #fed373 4%,
+                #f15245 30%,
+                #d92e7f 62%,
+                #9b36b7 85%,
+                #515ecf);
+    }
+    .judul-chanel a:hover{
+        background-color: white;
+        color: red;
+        font-weight: bold;
+    }
+    .instagram .judul-chanel a:hover{
+        /* background-color: #a2edff; */
+        background-image: radial-gradient(
+            circle at 30%100%,
+            #fff,
+            #a2edff);
+    }
+    .judul-chanel a:active{
+        box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.823);
+    }
+    .youtube svg{
+        /* margin-top: -40px; */
+    }
+    /*
+    .logo-ig{
+        width: 8rem;
+        height: 8rem;
+        background-image: radial-gradient(
+            circle at 33%100%,
+                #fed373 4%,
+                #f15245 30%,
+                #d92e7f 62%,
+                #9b36b7 85%,
+                #515ecf);
+        border-radius: 30%;
+        position:relative;
+        }
+    
+        .logo-ig::before{
+        content: '';
+        border: .3rem solid #fff;
+        border-radius: 30%;
+        width: 5rem;
+        height: 5rem;
+        top: 13%;
+        left: 13.3%;
+        position: absolute;
+        }
+        .logo-ig::after{
+        content: '';
+        border: .3rem solid #fff;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        top: 27%;
+        left: 29%;
+        position: absolute;
+        }
+        .logo-ig span{
+        border: .3rem solid #fff;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        top: 25%;
+        right: 25%;
+        position: absolute;
+        }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*bagian instagram*/
+    
+    .instagram svg{
+        margin-top: -160px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* bagian kontak */
+    .kokontak{
+        background-color: #a2edff;
+        padding-bottom: 90px;
+    }
+    
+    .kokontak .kontak{
+        width: 500px;
+        font-size: 20px;
+        /* border-radius: 9px; */
+        /* background-color: khaki; */
+    }
+    
+    .kontak .inputan{
+        margin-top:56px;
+        padding:19px 26px 30px;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow:inset 0 0 5px -2px ;
+    }
+    
+    .kontak .inputan div{
+        width: 100%;
+        background-color: #fff;
+        border-bottom:3px solid brown;
+    }
+    .kontak input{
+        height: 55px;
+        box-sizing: border-box;
+    }
+    
+    .inputan label{
+        /* position: relative; */
+        margin-top: -10px;
+        text-transform: capitalize;
+        color:rgba(74, 75, 75, 0.486);
+    }
+    
+    .kontak .inputan *{
+        border: none;
+        outline: none;
+        
+    }
+    .kontak input,
+    .kontak textarea{
+        margin-top: 9px;
+    /*     background-color: pink; */
+        font-size: inherit;
+        /* border: 4px solid rgba(128, 128, 128, 0.781); */
+        width: inherit;
+    /*     padding-left:15px; */
+        text-transform: capitalize;
+        margin-bottom: 0px;
+        padding-top: 7px;
+    }
+    
+    .kontak textarea{
+        min-height: 150px;
+        max-height: 110px;
+        max-width:100%;
+        font-weight: normal;
+        font-family: arial;
+        
+        min-height: 100%;
+/*      background: #bc55; */
+    }
+    
+    
+    .kontak button{
+        width: 120px;
+        height: 40px;
+        color: white;
+        cursor: pointer;
+        margin-top: 17px;
+        font-size: inherit;
+        border-radius: 7px;
+        background-color: rgb(9, 90, 156);
+        box-shadow: 3px 2px 7px -2px black;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/* bagain footer */
+    .fofoter{
+        background-color: #515ecf;
+    }
+
+    .footer{
+        padding:15px 0;
+    }
+
+    .footer p{
+        color: white;
+        text-transform: capitalize;
+        letter-spacing: 0px;
+        font-weight: bold;
+    }
+    
+    
+    
+    
+/*     
+    svg{
+        display: none;
+        width: 0;
+        
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:857px){
+
+  body{
+    /* overflow-x: hidden; */
+  }
+    header,section,.wadah,.hohome,.paragraf,.home,.kokontak,.kontak{
+      width: 100%;
+    }
+
+
+    section .column{
+      flex-direction: column;
+      /* background-color: cornflowerblue; */
+    }
+
+  .katingal{
+      /* background-color: chartreuse; */
+      padding-top: 100px;
+    }
+
+    .judul-konten{
+      font-size: 30px;
+    }
+
+    .hr{
+      width: 70px;
+      margin-top: -7px;
+      margin-bottom: 10px;
+    }
+
+    .wadah{
+      margin:0 1px;
+      padding: 0;
+      /* width: 575px; */
+    }
+
+
+    header{
+      height: 90px;
+    }
+
+    header .container .logo{
+      /* padding-left: 18px; */
+    }
+
+    header .layar .header{
+      display: block;
+      /* width: 575px; */
+    }
+
+    header .layar .kojin{
+      display: flex;
+      top: 8px;
+      transform: scale(0.8);
+      /* background-color: blueviolet; */
+      width:220px;
+      justify-content: space-between;
+      /* position: static; */
+    }
+    .kojin .join,.kontak-home{
+      color: rgb(207, 226, 246);
+      display: block;
+      margin: 5px 5px 0 0;
+      border: 2px solid rgb(207, 226, 246);
+    }
+    .kojin .join:hover{
+      color: dodgerblue;
+      background-color: white;
+      /* font-weight: bold; */
+    }
+    .kojin .kontak-home:hover{
+        color: dodgerblue;
+        background-color: #fff;
+        /* font-weight: bold; */
+    }
+
+    header .layar nav.navbar{
+      justify-content: flex-start;
+      /* padding-bottom: 8px; */
+      /* background-color: pink; */
+      /* padding-left: 0; */
+    }
+
+    header .layar .navbar a{
+      margin-left: 14px;
+    }
+
+    #youtube svg{
+      margin-top: 74px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* bagian home */
+    .hohome{
+      /* padding-bottom: 500px; */
+    }
+    div.hohome .home{
+      display: flex;
+      justify-content: center;
+      /* position: static; */
+      flex-direction: column;
+    }
+  .home .kojin{
+    display: none;
+  }
+
+  .hohome svg{
+    margin-top: 40px;
+  }
+
+
+
+
+
+
+
+
+
+  /* bagian about */
+  .wadah-paragraf .paragraf{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    /* background-color: dodgerblue; */
+  }
+  .paragraf p{
+    /* background-colo: firebrick; */
+    font-size: 19px;
+    margin-top: 9px;
+  }
+  section.sec-about svg{
+    margin-top: -20px;
+  }
+  .aabout .column{
+    background-color: white;
+  }
+
+
+
+
+
+
+
+
+/* bagain youtube */
+.ytb-bg{
+  background-image: url(img/youtube.png);
+  background-size: cover;
+  background-position: -55px -10px;
+}
+.column{
+  background-color: #a2ecffa6;
+  padding: 0 15px;
+}
+
+.column .ytb-section{
+  /* background-color: darkkhaki; */
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  /* text-indent: 30px; */
+  padding: 0;
+  color: #555;
+  text-shadow: 0 0 5px #fff;
+}
+.ytb-section img{
+  display: none;
+}
+
+.column div .section-chanel{
+  /* background-color: darkturquoise; */
+  width: 100%;
+  margin: 0;
+  margin-bottom: 2px;
+  /* align-items: center; */
+  padding-left: 15px;
+  /* justify-content: flex-start; */
+}
+/* .section-chanel .profil-akun{
+  background-color: fuchsia;
+} */
+.ytb-section{
+  padding: 0 19px;
+  box-sizing: border-box;
+  /* background-color: rgba(203, 206, 203, 0.561); */
+}
+
+
+.column div .section-chanel .judul-chanel{
+  /* background-color: blanchedalmond; */
+}
+
+
+.ytb-section .section-chanel .profil-akun{
+  width: 90px;
+  /* background-color: rgb(95, 146, 112); */
+}
+.section-chanel div .gambar{
+  background-color: blueviolet;
+  background-image: url(img/benget.jpg);
+  background-size: cover;
+}
+.section-chanel div div img{
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* bagian instagram */
+.ig-bg{
+  background-image: url(img/instagram2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -55px 49px;
+  background-origin: padding-box;
+}
+
+.instagram .column{
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+div.instagram .section-chanel{
+  /* background-color: tomato; */
+  padding-right: 15px;
+}
+
+
+.instagram svg{
+  margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+/* bagian kontak */
+
+.kokontak .kontak{
+  /* background-color: tomato; */
+  width: 300px;
+  
+}
+
+.inputan{
+  /* margin:0 auto ; */
+  /* width: inherit; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+       
+      </style>
+  </head>
+  <body>
+    <header>
+      <div class="layar">
+        <div class="container header auto-tengah wadah padding-wadah">
+          <div class="logo">
+            <h2>
+              <i class="icon i-logo">
+                <img src="img/icon/i-logo2.png" alt="Logo">
+              </i>
+            </h2>
+          </div>
+          <nav class="container navbar">
+            <a href="#home" class="indext">indext</a>
+            <a href="#about">about</a>
+            <a href="#youtube">YouTube</a> 
+            <a href="#instagram">instagram</a>
+            <a href="#kontak">kontak</a>
+          </nav>
+          <div class="container kojin">
+            <a href="#kontak" class="kontak-home">kontak</a>
+            <div class="join">gabung</div>
+        </div>
+        </div>
+      </div>
+    </header>
+  <!-- 
+    sublime text keymap and settings
+    open in browser -
+    live server
+    auto rename tag -
+    intellisense for clasnames
+    css peek
+    indent rainbow //warna indentasi
+    bracket pair colorizer
+    beautify//merapihkan indentasi ->  file -> preferences -> setting -> user -> text editor -> centang format auto save 
+    php intellisense
+    one dark pro 
+-->
+  
+
+
+
+
+     
+<!-- bagian home -->
+    <section id="home">
+      <div class="hohome">
+          <div class="wadah auto-tengah home">
+              <div class="container kojin">
+                  <a href="#kontak" class="kontak-home">kontak</a>
+                  <div class="join">gabung</div>
+              </div>
+              <div class="profil tengah">
+                  <div class="img auto-tengah">
+                      <img src="img/benget.jpg" alt="gambar profil" />
+                  </div>
+                  <h1>Muhammad Faisal</h1>
+                  <span>Selamat datang di website kami</span>
+              </div>
+              <div class="sosmed auto-tengah container">
+                  <a href="#" class="whatsapp">
+                      <i class="i-wa icon"></i>
+                      <span>WhatsApp</span>
+                  </a>
+                  <a href="#" class="twiter">
+                      <i class="i-twt icon"></i>
+                      <span>twitter</span>
+                  </a>
+                  <a href="#" class="facebook">
+                      <i class="i-fb icon"></i>
+                      <span>facebook</span>
+                  </a>
+              </div>
+          </div>
+          <svg class="svg-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,90.7C640,117,800,171,960,181.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>                
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+      <!-- bagian about -->
+    <section class="sec-about">
+      <div id="about" class="katingal"></div>
+      <div class="aabout">
+        <div class="wadah auto-tengah wadah-paragraf">
+          <h2 class="about judul-konten tengah">About</h2>
+          <span class="hr auto-tengah"></span>
+          <div class="container auto-tengah paragraf column">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi nesciunt commodi maxime. Provident iure velit ipsum vel est non eum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit soluta reprehenderit aspernatur aliquid que vero saepe, et pariatur accusantium ipsam, laboriosam sequi quos sit similique quo.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ad sequi laborum, expedita omnis asperiores. Totam, ut! Fugiat, laudantium mollitia? Eligendi animi minus eveniet quae porro itaque voluptate, deleniti dignissimos nihil sit aliquid. Saepe delectus inventore eveniet cumque consequatur? </p>
+          </div>
+        </div>
+      </div>
+      <svg class="svg-about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2edff" fill-opacity="1" d="M0,160L60,186.7C120,213,240,267,360,282.7C480,299,600,277,720,261.3C840,245,960,235,1080,240C1200,245,1320,267,1380,277.3L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </section>
+
+
+
+      
+      <!--bagian youtube-->
+    <section id="youtube">
+      <div class="youtube display katingal">
+        <h2 class="youtube judul-konten tengah">YouTube</h2>
+        <span class="hr auto-tengah"></span>
+        <div class="wadah auto-tengah ytb-bg">
+          <div class="container column">
+            <div class="gambar ytb-section">
+              <img src="img/youtube.png" alt="" /> 
+            </div>
+            <div class="chanel ytb-section">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, voluptate libero. Adipisci non, exercitationem cum accusamus perspiciatis delectus temporibus aliquid quas enim sunt quis, magni, dolor velit quo.</p>
+              <section class="container section-chanel">
+                <div class="profil-akun">
+                  <div class="gambar">
+                    <img class="" src="img/benget.jpg" alt="gambar" />
+                  </div>
+                </div>
+                <div class="judul-chanel">
+                  <h3>web designer</h3>
+                  <div class="container">
+                    <p>4 juta subscribers</p>
+                    <a href="#youtube">subscribe</a>
+                  </div>
+                </div>
+              </section>
+              <section class="container section-chanel">
+                <div class="profil-akun">
+                <div class="gambar">
+                  <img class="" src="img/benget.jpg" alt="" />
+                </div>
+                </div>
+                <div class="judul-chanel">
+                  <h3>berani bicara</h3>
+                  <div class="container">
+                    <p>703.543 subscribers</p>
+                    <a href="#youtube">subscribe</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L80,64C160,64,320,64,480,90.7C640,117,800,171,960,181.3C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>                
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--bagian instagram-->
+    <section id="instagram">
+      <div class="katingal">
+        <div class="instagram displya">
+          <div class="wadah auto-tengah ig-bg">
+            <h2 class="instagram tengah judul-konten">intagram</h2>
+            <span class="hr auto-tengah"></span>
+            <div class="container column">
+              <div class="gambar ytb-section">
+                  <img src="img/instagram2.png" alt="" /> 
+              </div>
+              <div class="chanel ytb-section">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In iure cupiditate reiciendis ipsam temporibus labore, natus recusandae doloribus distinctio sequi. Enim, sint? Dolores perspiciatis recusandae asperiores amet corporis quidem quasi!</p>
+                <section class="container section-chanel">
+                  <div class="profil-akun">
+                    <div class="gambar">
+                      <img class="" src="img/benget.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="judul-chanel">
+                    <h3>muhammad_faiaal2339</h3>
+                    <div class="container">
+                      <p>4 juta followers</p>
+                      <a href="#instagram">follow</a>
+                    </div>
+                  </div>
+                </section>
+                <section class="container section-chanel">
+                  <div class="profil-akun">
+                  <div class="gambar">
+                    <img class="" src="img/benget.jpg" alt="" />
+                  </div>
+                  </div>
+                  <div class="judul-chanel">
+                    <h3>ahmad faiziul8890</h3>
+                    <div class="container">
+                      <p>789.000 followers</p>
+                      <a href="#instagram">follow</a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <!-- <div class="logo-ig"><span></span></div> -->
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2edff" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,250.7C640,245,800,203,960,181.3C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>            </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="kontak">
+      <div class="kokontak katingal">
+        <div class="wadah auto-tengah">
+          <div class="kontak auto-tengah">
+            <h2 class="tengah judul-konten">contact me</h2>
+            <span class="hr auto-tengah"></span>
+            <div class="inputan">
+              <div class="nama">
+                <input type="text" id="nama" placeholder="nama">
+                <!-- <label for="nama">nama</label> -->
+              </div>
+              <div class="email">
+                <input type="text" id="email" placeholder="e-mail">
+                <!-- <label for="email">email</label> -->
+              </div>
+              <div class="textarea">
+                <textarea id="area" placeholder="tuliskan pesan..."></textarea>
+                <!-- <label for="area">textarea</label> -->
+              </div>
+              <button type="submit">kirim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="fofoter">
+     <div class="footer">
+       <div class="wadah auto-tengah">
+        <p>copiright@ 2021</p>
+       </div>
+     </div>
+    </div>
+  </footer>
+
+
+
+
+  </body>
+</html>
